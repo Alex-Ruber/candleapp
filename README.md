@@ -1,125 +1,145 @@
-Candle
+🕯️ Candle
 
-Candle is a mobile product for couples to build and maintain emotional connection through small, consistent daily interactions.
+Candle is a mobile application that helps couples build and maintain emotional connection through small, consistent daily interactions.
 
-Rather than focusing on large gestures or sporadic check-ins, Candle is designed around the idea that relationships are strengthened through repetition, presence, and intentionality over time.
+The product is designed to fit naturally into everyday life. Interactions are intentionally short, private, and repeatable, with the goal of strengthening relationships over time rather than driving engagement through intensity or novelty.
 
-🌐 https://www.trycandle.app
+🌐 Website: https://www.trycandle.app
 
-Problem
+📚 Table of Contents
 
-Most relationship tools fail for one of two reasons:
+🔍 Overview
 
-They require too much time and effort to sustain.
+❗ The Problem
 
-They turn intimacy into content, performance, or therapy.
+🧠 The Candle Approach
 
-Couples want to feel connected, but not at the cost of friction, obligation, or public exposure. The gap is not a lack of desire—it’s a lack of systems that fit naturally into everyday life.
+✨ Core Features
 
-Solution
+🎯 Product Principles
 
-Candle provides a lightweight daily ritual for couples.
+🔐 Privacy & Trust
 
-Each day, partners are given a small, shared interaction—something that can be completed in minutes but compounds over time. These interactions are designed to encourage presence, curiosity, and emotional awareness without feeling heavy or prescriptive.
+🧩 Technical Overview
 
-The product optimizes for:
+🗂 Repository Structure
 
-Consistency over intensity
+🚀 Getting Started
 
-Private interaction over social broadcasting
+🤝 Contributing
 
-Emotional alignment over productivity
+🛡 Security
 
-Core Product Concepts
-Daily Prompts
+📄 License
 
-Candle surfaces short prompts and challenges intended to spark conversation or reflection. These are intentionally scoped to be:
+🏢 Company
 
-Easy to complete
+🔍 Overview
 
-Non-judgmental
+Modern relationships are busy, distributed, and often mediated by technology that was not designed for intimacy. While couples want to feel emotionally connected, existing tools frequently introduce friction, pressure, or performative behavior.
 
-Open-ended rather than prescriptive
+Candle exists to provide a simple, reliable daily ritual for couples—one that encourages presence and communication without requiring significant time, emotional labor, or public exposure.
 
-Prompts range from playful to reflective, with the goal of meeting couples where they are on a given day.
+❗ The Problem
 
-Shared Photo Moments
+Most relationship products fall into one of three categories:
 
-Some prompts encourage sharing a photo. These photos are private to the couple and act as lightweight documentation of shared life moments.
+High-effort tools that are difficult to sustain long-term
 
-Over time, this creates a visual archive of the relationship that is:
+Therapy-oriented experiences that feel heavy or prescriptive
 
-Contextual
+Social products that prioritize sharing over privacy
 
-Chronological
+As a result, many couples disengage even when the underlying desire to connect remains.
 
-Intentionally incomplete (no pressure to document everything)
+🧠 The Candle Approach
 
-Micro-Interactions
+Candle is built around consistency rather than intensity.
 
-Candle includes small interactive gestures (e.g., “thumb kisses”) designed to provide a sense of presence and reciprocity, especially for couples who are apart.
+Each day, couples receive a shared interaction designed to be completed in minutes. These interactions are small by design, but when repeated daily, they create momentum, awareness, and emotional alignment.
 
-These interactions are deliberately simple. Their value comes from frequency, not novelty.
+The product intentionally avoids:
 
-Streaks & Rituals
+Public feeds
 
-Rather than gamifying the relationship, Candle tracks consistency in a subtle way.
+Social comparison
 
-Streaks exist to:
+Pressure-driven gamification
 
-Reinforce habit formation
+Over-optimization of emotional outcomes
 
-Encourage returning daily
+✨ Core Features
+🗓 Daily Prompts
 
-Provide feedback without pressure
+Short prompts and challenges designed to spark conversation, reflection, or play. Prompts are intentionally open-ended and low-pressure, allowing couples to engage at their own depth.
 
-There are no leaderboards, comparisons, or public metrics.
+📸 Shared Photo Moments
 
-Local Date Ideas (Beta)
+Some prompts invite partners to share a photo. These images are private to the couple and form a lightweight, chronological archive of shared experiences.
 
-Candle can surface contextual date ideas based on location. These are intended as inspiration rather than instruction.
+There is no expectation to document everything—only moments that feel meaningful in context.
 
-The feature is currently in beta and evolving based on usage patterns.
+🤍 Micro-Interactions
 
-Product Principles
+Candle includes simple interactive gestures that allow partners to express presence and affection in small ways, particularly useful for long-distance or asynchronous communication.
 
-Candle is guided by a small set of principles that inform product and engineering decisions:
+These interactions are designed to feel natural, not performative.
+
+🔁 Streaks & Rituals
+
+Candle tracks daily participation to reinforce habit formation. Streaks are subtle and supportive, not competitive.
+
+There are no leaderboards, public metrics, or external comparisons.
+
+📍 Local Date Ideas (Beta)
+
+Contextual date suggestions based on location and availability. This feature is designed as inspiration rather than instruction and continues to evolve based on usage.
+
+🎯 Product Principles
+
+Candle is guided by the following principles:
 
 Low friction
-Every interaction should feel easy to start and easy to finish.
+Interactions should be easy to start and easy to complete.
 
 Private by default
-Candle is for couples, not audiences.
+Candle is built for couples, not audiences.
 
 Intentional scope
-Features are narrow, opinionated, and focused.
+Features are narrow, opinionated, and purpose-driven.
 
 Emotional safety
 The product avoids judgment, scoring, or forced vulnerability.
 
-Long-term orientation
-Designed for months and years of use, not novelty spikes.
+Long-term focus
+Designed for sustained use over months and years.
 
-Technical Overview
+🔐 Privacy & Trust
 
-Update as needed to reflect the actual stack.
+User trust is foundational to Candle.
 
-Mobile: React Native (iOS & Android)
+All interactions are private by default
 
-Backend: Node.js
+No public profiles or social graphs
 
-API: REST
+User data is never sold or shared
 
-Database: PostgreSQL
+Privacy is treated as a product feature, not a compliance requirement.
 
-Infrastructure: Cloud-hosted, containerized services
+🧩 Technical Overview
 
-CI/CD: GitHub Actions
+Adjust as needed to reflect the current implementation.
 
-The system is designed to be:
+📱 Mobile: React Native (iOS & Android)
 
-Reliable under daily recurring usage
+🧠 Backend: Node.js
 
-Privacy-conscious
+🔌 API: REST
 
-Easy to iterate on as product learnings evolve
+🗄 Database: PostgreSQL
+
+☁️ Infrastructure: Cloud-hosted, containerized services
+
+🔄 CI/CD: GitHub Actions
+
+The system is designed for reliability, privacy, and fast iteration.
