@@ -1,25 +1,29 @@
-🕯️ Candle
+# 🕯️ Candle
 
-Candle is a mobile application that helps couples build and maintain emotional connection through small, consistent daily interactions.
+Candle is a mobile application that helps couples build and maintain emotional connection through small, consistent daily interactions.  
 The product is intentionally lightweight, private, and designed for long-term use.
 
 Website: https://www.trycandle.app
 
-📌 Overview
+---
 
-Candle focuses on consistency over intensity.
+## 📌 Overview
+
+Candle focuses on consistency over intensity.  
 Daily interactions are designed to be completed in minutes, forming habits that compound over time.
 
 The product avoids:
+- Public feeds
+- Social comparison
+- Pressure-driven gamification
 
-Public feeds
+---
 
-Social comparison
+## 🏗️ System Architecture
 
-Pressure-driven gamification
+### High-Level Architecture
 
-🏗️ System Architecture
-High-Level Architecture
+```text
 +-------------------+
 |   Mobile Clients  |
 | (iOS / Android)   |
@@ -37,8 +41,13 @@ High-Level Architecture
 |    PostgreSQL     |
 |     Database      |
 +-------------------+
+```
 
-Component Breakdown
+---
+
+### Component Breakdown
+
+```text
 +--------------------------------------------------+
 |                   Candle                         |
 +---------------------+----------------------------+
@@ -55,8 +64,13 @@ Component Breakdown
 |        Storage          |
 |   (Images / Assets)     |
 +-------------------------+
+```
 
-Daily Interaction Flow
+---
+
+### Daily Interaction Flow
+
+```text
 User A opens app
         |
         v
@@ -73,41 +87,42 @@ User B responds
         |
         v
 Interaction archived
+```
 
-✨ Features
-Daily Prompts
+---
 
+## ✨ Features
+
+### Daily Prompts
 Lightweight prompts designed to encourage reflection, play, or conversation without pressure.
 
-Shared Photo Moments
-
+### Shared Photo Moments
 Private photo sharing that builds a contextual timeline of the relationship.
 
-Micro-Interactions
-
+### Micro-Interactions
 Small gestures to signal presence, especially for long-distance or asynchronous use.
 
-Streaks & Rituals
-
+### Streaks & Rituals
 Subtle habit reinforcement without competition or comparison.
 
-Local Date Ideas (Beta)
-
+### Local Date Ideas (Beta)
 Contextual inspiration for offline connection.
 
-🧠 Product Principles
+---
 
-Low friction — interactions take minutes
+## 🧠 Product Principles
 
-Private by default — no social graph
+- **Low friction** — interactions take minutes  
+- **Private by default** — no social graph  
+- **Intentional scope** — features are narrow and focused  
+- **Emotional safety** — no scoring or judgment  
+- **Long-term use** — designed for months and years  
 
-Intentional scope — features are narrow and focused
+---
 
-Emotional safety — no scoring or judgment
+## 🧩 Repository Structure
 
-Long-term use — designed for months and years
-
-🧩 Repository Structure
+```text
 .
 ├── mobile/          # iOS & Android app
 ├── backend/         # API and business logic
@@ -115,62 +130,58 @@ Long-term use — designed for months and years
 ├── docs/            # Internal documentation
 ├── .github/         # CI/CD workflows
 └── README.md
+```
 
-🚀 Quick Start
-Requirements
+---
 
-Node.js ≥ 18
+## 🚀 Quick Start
 
-npm or yarn
+### Requirements
 
-Xcode
+- Node.js >= 18
+- npm or yarn
+- Xcode
+- Android Studio
 
-Android Studio
+### Setup
 
-Setup
+```bash
 git clone https://github.com/<org>/candle.git
 cd candle
 npm install
+```
 
+Create `.env`:
 
-Create .env:
-
+```env
 NODE_ENV=development
 API_URL=http://localhost:3000
-
+```
 
 Run:
 
+```bash
 npm start
+```
 
-🧪 Testing
-npm test
+---
 
+## 🔐 Security & Privacy
 
-Includes unit and integration tests for:
-
-Prompt flow
-
-Partner sync
-
-Media metadata
-
-Streak logic
-
-🔐 Security & Privacy
-
-Private by default
-
-No public profiles
-
-No data resale or sharing
+- Private by default
+- No public profiles
+- No data resale or sharing
 
 Report vulnerabilities to: security@trycandle.app
 
-📄 License
+---
+
+## 📄 License
 
 MIT License.
 
-🏢 Company
+---
+
+## 🏢 Company
 
 Candle is backed by Y Combinator and built by a small, product-focused team.
