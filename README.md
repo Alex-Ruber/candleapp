@@ -1,64 +1,16 @@
 🕯️ Candle
 
 Candle is a mobile application that helps couples build and maintain emotional connection through small, consistent daily interactions.
+The product is intentionally lightweight, private, and designed for long-term use.
 
-The product is designed to fit naturally into everyday life. Interactions are intentionally short, private, and repeatable, with the goal of strengthening relationships over time rather than driving engagement through intensity or novelty.
+Website: https://www.trycandle.app
 
-🌐 Website: https://www.trycandle.app
+📌 Overview
 
-📚 Table of Contents
+Candle focuses on consistency over intensity.
+Daily interactions are designed to be completed in minutes, forming habits that compound over time.
 
-🔍 Overview
-
-❗ The Problem
-
-🧠 The Candle Approach
-
-✨ Core Features
-
-🎯 Product Principles
-
-🔐 Privacy & Trust
-
-🧩 Technical Overview
-
-🗂 Repository Structure
-
-🚀 Getting Started
-
-🤝 Contributing
-
-🛡 Security
-
-📄 License
-
-🏢 Company
-
-🔍 Overview
-
-Modern relationships are busy, distributed, and often mediated by technology that was not designed for intimacy. While couples want to feel emotionally connected, existing tools frequently introduce friction, pressure, or performative behavior.
-
-Candle exists to provide a simple, reliable daily ritual for couples—one that encourages presence and communication without requiring significant time, emotional labor, or public exposure.
-
-❗ The Problem
-
-Most relationship products fall into one of three categories:
-
-High-effort tools that are difficult to sustain long-term
-
-Therapy-oriented experiences that feel heavy or prescriptive
-
-Social products that prioritize sharing over privacy
-
-As a result, many couples disengage even when the underlying desire to connect remains.
-
-🧠 The Candle Approach
-
-Candle is built around consistency rather than intensity.
-
-Each day, couples receive a shared interaction designed to be completed in minutes. These interactions are small by design, but when repeated daily, they create momentum, awareness, and emotional alignment.
-
-The product intentionally avoids:
+The product avoids:
 
 Public feeds
 
@@ -66,80 +18,159 @@ Social comparison
 
 Pressure-driven gamification
 
-Over-optimization of emotional outcomes
+🏗️ System Architecture
+High-Level Architecture
++-------------------+
+|   Mobile Clients  |
+| (iOS / Android)   |
++---------+---------+
+          |
+          | HTTPS / REST
+          |
++---------v---------+
+|       API         |
+|   (Node.js)       |
++---------+---------+
+          |
+          |
++---------v---------+
+|    PostgreSQL     |
+|     Database      |
++-------------------+
 
-✨ Core Features
-🗓 Daily Prompts
+Component Breakdown
++--------------------------------------------------+
+|                   Candle                         |
++---------------------+----------------------------+
+| Mobile App          | Backend                    |
+|---------------------|----------------------------|
+| • Daily Prompts     | • Auth & Sessions          |
+| • Photo Sharing    | • Prompt Engine             |
+| • Micro Gestures   | • Partner Sync              |
+| • Streak Tracking  | • Media Metadata            |
++---------------------+----------------------------+
+             |
+             |
++------------v------------+
+|        Storage          |
+|   (Images / Assets)     |
++-------------------------+
 
-Short prompts and challenges designed to spark conversation, reflection, or play. Prompts are intentionally open-ended and low-pressure, allowing couples to engage at their own depth.
+Daily Interaction Flow
+User A opens app
+        |
+        v
+Receives Daily Prompt
+        |
+        v
+Completes Interaction
+        |
+        v
+Prompt synced to partner
+        |
+        v
+User B responds
+        |
+        v
+Interaction archived
 
-📸 Shared Photo Moments
+✨ Features
+Daily Prompts
 
-Some prompts invite partners to share a photo. These images are private to the couple and form a lightweight, chronological archive of shared experiences.
+Lightweight prompts designed to encourage reflection, play, or conversation without pressure.
 
-There is no expectation to document everything—only moments that feel meaningful in context.
+Shared Photo Moments
 
-🤍 Micro-Interactions
+Private photo sharing that builds a contextual timeline of the relationship.
 
-Candle includes simple interactive gestures that allow partners to express presence and affection in small ways, particularly useful for long-distance or asynchronous communication.
+Micro-Interactions
 
-These interactions are designed to feel natural, not performative.
+Small gestures to signal presence, especially for long-distance or asynchronous use.
 
-🔁 Streaks & Rituals
+Streaks & Rituals
 
-Candle tracks daily participation to reinforce habit formation. Streaks are subtle and supportive, not competitive.
+Subtle habit reinforcement without competition or comparison.
 
-There are no leaderboards, public metrics, or external comparisons.
+Local Date Ideas (Beta)
 
-📍 Local Date Ideas (Beta)
+Contextual inspiration for offline connection.
 
-Contextual date suggestions based on location and availability. This feature is designed as inspiration rather than instruction and continues to evolve based on usage.
+🧠 Product Principles
 
-🎯 Product Principles
+Low friction — interactions take minutes
 
-Candle is guided by the following principles:
+Private by default — no social graph
 
-Low friction
-Interactions should be easy to start and easy to complete.
+Intentional scope — features are narrow and focused
+
+Emotional safety — no scoring or judgment
+
+Long-term use — designed for months and years
+
+🧩 Repository Structure
+.
+├── mobile/          # iOS & Android app
+├── backend/         # API and business logic
+├── web/             # Marketing site
+├── docs/            # Internal documentation
+├── .github/         # CI/CD workflows
+└── README.md
+
+🚀 Quick Start
+Requirements
+
+Node.js ≥ 18
+
+npm or yarn
+
+Xcode
+
+Android Studio
+
+Setup
+git clone https://github.com/<org>/candle.git
+cd candle
+npm install
+
+
+Create .env:
+
+NODE_ENV=development
+API_URL=http://localhost:3000
+
+
+Run:
+
+npm start
+
+🧪 Testing
+npm test
+
+
+Includes unit and integration tests for:
+
+Prompt flow
+
+Partner sync
+
+Media metadata
+
+Streak logic
+
+🔐 Security & Privacy
 
 Private by default
-Candle is built for couples, not audiences.
 
-Intentional scope
-Features are narrow, opinionated, and purpose-driven.
+No public profiles
 
-Emotional safety
-The product avoids judgment, scoring, or forced vulnerability.
+No data resale or sharing
 
-Long-term focus
-Designed for sustained use over months and years.
+Report vulnerabilities to: security@trycandle.app
 
-🔐 Privacy & Trust
+📄 License
 
-User trust is foundational to Candle.
+MIT License.
 
-All interactions are private by default
+🏢 Company
 
-No public profiles or social graphs
-
-User data is never sold or shared
-
-Privacy is treated as a product feature, not a compliance requirement.
-
-🧩 Technical Overview
-
-Adjust as needed to reflect the current implementation.
-
-📱 Mobile: React Native (iOS & Android)
-
-🧠 Backend: Node.js
-
-🔌 API: REST
-
-🗄 Database: PostgreSQL
-
-☁️ Infrastructure: Cloud-hosted, containerized services
-
-🔄 CI/CD: GitHub Actions
-
-The system is designed for reliability, privacy, and fast iteration.
+Candle is backed by Y Combinator and built by a small, product-focused team.
