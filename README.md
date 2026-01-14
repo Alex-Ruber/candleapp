@@ -1,74 +1,125 @@
-<!-- fallback_CryptoNode_20260110162551_48316 -->
+Candle
 
-# CryptoNode: At the Edge of Real-time Transaction Processing, CryptoNode Forges Decentralized Clusters, Auto-scaling with Fault-Tolerant Characteristics, Securely on LedgerForge Implementation
-> Advanced typescript solution leveraging modern architecture patterns and cutting-edge technology.
+Candle is a mobile product for couples to build and maintain emotional connection through small, consistent daily interactions.
 
-At the Edge of Real-time Transaction Processing, CryptoNode Forges Decentralized Clusters, Auto-scaling with Fault-Tolerant Characteristics, Securely on LedgerForge.
+Rather than focusing on large gestures or sporadic check-ins, Candle is designed around the idea that relationships are strengthened through repetition, presence, and intentionality over time.
 
-CryptoNode is designed to provide developers and professionals with a robust, efficient, and scalable solution for their typescript development needs. This implementation focuses on performance, maintainability, and ease of use, incorporating industry best practices and modern software architecture patterns.
+🌐 https://www.trycandle.app
 
-The primary purpose of CryptoNode is to streamline development workflows and enhance productivity through innovative features and comprehensive functionality. Whether you're building enterprise applications, data processing pipelines, or interactive systems, CryptoNode provides the foundation you need for successful project implementation.
+Problem
 
-CryptoNode's key benefits include:
+Most relationship tools fail for one of two reasons:
 
-* **High-performance architecture**: Leveraging optimized algorithms and efficient data structures for maximum performance.
-* **Modern development patterns**: Implementing contemporary software engineering practices and design patterns.
-* **Comprehensive testing**: Extensive test coverage ensuring reliability and maintainability.
+They require too much time and effort to sustain.
 
-# Key Features
+They turn intimacy into content, performance, or therapy.
 
-* **Type-safe TypeScript development**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Modern async/await patterns**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Modular architecture design**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Comprehensive testing suite**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Production-ready build system**: Advanced implementation with optimized performance and comprehensive error handling.
+Couples want to feel connected, but not at the cost of friction, obligation, or public exposure. The gap is not a lack of desire—it’s a lack of systems that fit naturally into everyday life.
 
-# Technology Stack
+Solution
 
-* **Typescript**: Primary development language providing performance, reliability, and extensive ecosystem support.
-* **Modern tooling**: Utilizing contemporary development tools and frameworks for enhanced productivity.
-* **Testing frameworks**: Comprehensive testing infrastructure ensuring code quality and reliability.
+Candle provides a lightweight daily ritual for couples.
 
-# Installation
+Each day, partners are given a small, shared interaction—something that can be completed in minutes but compounds over time. These interactions are designed to encourage presence, curiosity, and emotional awareness without feeling heavy or prescriptive.
 
-To install CryptoNode, follow these steps:
+The product optimizes for:
 
-1. Clone the repository:
+Consistency over intensity
 
+Private interaction over social broadcasting
 
-2. Follow the installation instructions in the documentation for your specific environment.
+Emotional alignment over productivity
 
-# Configuration
+Core Product Concepts
+Daily Prompts
 
-CryptoNode supports various configuration options to customize behavior and optimize performance for your specific use case. Configuration can be managed through environment variables, configuration files, or programmatic settings.
+Candle surfaces short prompts and challenges intended to spark conversation or reflection. These are intentionally scoped to be:
 
-## # Configuration Options
+Easy to complete
 
-The following configuration parameters are available:
+Non-judgmental
 
-* **Verbose Mode**: Enable detailed logging for debugging purposes
-* **Output Format**: Customize the output format (JSON, CSV, XML)
-* **Performance Settings**: Adjust memory usage and processing threads
-* **Network Settings**: Configure timeout and retry policies
+Open-ended rather than prescriptive
 
-# Contributing
+Prompts range from playful to reflective, with the goal of meeting couples where they are on a given day.
 
-Contributions to CryptoNode are welcome and appreciated! We value community input and encourage developers to help improve this project.
+Shared Photo Moments
 
-## # How to Contribute
+Some prompts encourage sharing a photo. These photos are private to the couple and act as lightweight documentation of shared life moments.
 
-1. Fork the CryptoNode repository.
-2. Create a new branch for your feature or fix.
-3. Implement your changes, ensuring they adhere to the project's coding standards and guidelines.
-4. Submit a pull request, providing a detailed description of your changes.
+Over time, this creates a visual archive of the relationship that is:
 
-## # Development Guidelines
+Contextual
 
-* Follow the existing code style and formatting conventions
-* Write comprehensive tests for new features
-* Update documentation when adding new functionality
-* Ensure all tests pass before submitting your pull request
+Chronological
 
-# License
+Intentionally incomplete (no pressure to document everything)
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/Marwannabil92/CryptoNode/blob/main/LICENSE) file for details.
+Micro-Interactions
+
+Candle includes small interactive gestures (e.g., “thumb kisses”) designed to provide a sense of presence and reciprocity, especially for couples who are apart.
+
+These interactions are deliberately simple. Their value comes from frequency, not novelty.
+
+Streaks & Rituals
+
+Rather than gamifying the relationship, Candle tracks consistency in a subtle way.
+
+Streaks exist to:
+
+Reinforce habit formation
+
+Encourage returning daily
+
+Provide feedback without pressure
+
+There are no leaderboards, comparisons, or public metrics.
+
+Local Date Ideas (Beta)
+
+Candle can surface contextual date ideas based on location. These are intended as inspiration rather than instruction.
+
+The feature is currently in beta and evolving based on usage patterns.
+
+Product Principles
+
+Candle is guided by a small set of principles that inform product and engineering decisions:
+
+Low friction
+Every interaction should feel easy to start and easy to finish.
+
+Private by default
+Candle is for couples, not audiences.
+
+Intentional scope
+Features are narrow, opinionated, and focused.
+
+Emotional safety
+The product avoids judgment, scoring, or forced vulnerability.
+
+Long-term orientation
+Designed for months and years of use, not novelty spikes.
+
+Technical Overview
+
+Update as needed to reflect the actual stack.
+
+Mobile: React Native (iOS & Android)
+
+Backend: Node.js
+
+API: REST
+
+Database: PostgreSQL
+
+Infrastructure: Cloud-hosted, containerized services
+
+CI/CD: GitHub Actions
+
+The system is designed to be:
+
+Reliable under daily recurring usage
+
+Privacy-conscious
+
+Easy to iterate on as product learnings evolve
